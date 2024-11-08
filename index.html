@@ -32,83 +32,87 @@
   <!-- Links (sit on top) -->
   <div class="w3-top">
     <div class="w3-row w3-padding w3-black">
-      <div class="w3-col s3">
+      <div class="w3-col s4">
         <a href="#" class="w3-button w3-block w3-black">HOME</a>
       </div>
-      <div class="w3-col s3">
+      <div class="w3-col s4">
         <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
       </div>
-      <div class="w3-col s3">
-        <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-      </div>
-      <div class="w3-col s3">
-        <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+      <div class="w3-col s4">
+        <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
       </div>
     </div>
   </div>
 
+  <!-- Header with image -->
+  <header class="w3-display-container w3-grayscale-min" id="home">
+    <img src="cafe.avif" alt="" height=740 width=100%>
+  </header>
 
   <!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
-    <p>The Cafe was founded in Cagayan de Oro City by Mr. Dave Baran, the best businessman in Ohio Suites, with the power of friendship, he set out to find and construct the best cafe in the whole wide world. Together with his friends, they set out a journey to find the dragon bean for the cafe company to flourish.</p>
-    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff such as the best dances to break it down. You can see the owner live doing the Nae nae!</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet and offense.</i></p>
-      <p>Chef, Coffeeist and Owner: Anastasio</p>
+  <div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+      <p>The Cafe was founded in Cagayan de Oro City by Mr. Dave Baran, the best businessman in Ohio Suites, with the
+        power of friendship, he set out to find and construct the best cafe in the whole wide world. Together with his
+        friends, they set out a journey to find the dragon bean for the cafe company to flourish.</p>
+      <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
+        sandwiches, as well as a selection of sides and salads and other good stuff such as the best dances to break it
+        down. You can see the owner live doing the Nae nae!</p>
+      <div class="w3-panel w3-leftbar w3-light-grey">
+        <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet
+            and offense.</i></p>
+        <p>Chef, Coffeeist and Owner: Anastasio</p>
+      </div>
+      <!-- Add Image -->
+      <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+      <p><strong>Address:</strong> 69 Nazareth street, 420, cdo</p>
     </div>
-    <!-- Add Image -->
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-    <p><strong>Address:</strong> 69 Nazareth street, 420, cdo</p>
   </div>
-</div>
 
-  
-  
+
+
   <!-- Contact/Area Container -->
-  <div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-container" id="contact" style="padding-bottom:32px;">
     <div class="w3-content" style="max-width:700px">
       <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT US</span></h5>
       <p>Find us at Lane 202, Mastersons Avenue! </p>
-      <p><span class="w3-tag">FYI!</span> Catofe is a café that caters to both cat and coffee lovers, offering a uniquely inviting environment. </p>
-      The resident cats, all adopted from nearby shelters, bring a special charm to the cafe, creating a peaceful atmosphere. </p>
+      <p><span class="w3-tag">FYI!</span> Catofe is a café that caters to both cat and coffee lovers, offering a
+        uniquely inviting environment. </p>
+      The resident cats, all adopted from nearby shelters, bring a special charm to the cafe, creating a peaceful
+      atmosphere. </p>
       <p> Call us 09123456789. </p>
-        SEE YOU THERE! </p>
+      SEE YOU THERE! </p>
     </div>
-  </>
+    </>
 
 
 
 
 
 
-  <!-- Footer -->
-  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-        class="w3-hover-text-green">w3.css</a></p>
-  </footer>
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+          class="w3-hover-text-green">w3.css</a></p>
+    </footer>
 
-  <script>
-    // Tabbed Menu
-    function openMenu(evt, menuName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("menu");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
       }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-      }
-      document.getElementById(menuName).style.display = "block";
-      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-    }
-    document.getElementById("myLink").click();
-  </script>
+      document.getElementById("myLink").click();
+    </script>
 
 </body>
-
-
-
-
